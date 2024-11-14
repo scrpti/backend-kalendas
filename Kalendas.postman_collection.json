@@ -1,0 +1,474 @@
+{
+	"info": {
+		"_postman_id": "2a0dd6a9-b798-4b4f-a1f9-c39412f91a34",
+		"name": "Kalendas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39369444"
+	},
+	"item": [
+		{
+			"name": "kalendas",
+			"item": [
+				{
+					"name": "GET /usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/usuarios",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /usuarios/<id>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/usuarios/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"usuarios",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /usuarios",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"migue@uma.es\",\n    \"nombre\":\"miguel\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/usuarios",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /usuarios/<id>",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\":\"migue\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/usuarios/6735c07d5fd433a65afeae84",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"usuarios",
+								"6735c07d5fd433a65afeae84"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /usuarios/<id>",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/usuarios/6735c07d5fd433a65afeae84",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"usuarios",
+								"6735c07d5fd433a65afeae84"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL /usuarios/<id>/contactos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/usuarios/migue@uma.es/contactos",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"usuarios",
+								"migue@uma.es",
+								"contactos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /usuarios/<email>/contactos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"emailContacto\":\"pedro@uma.es\",\n    \"nombreContacto\":\"pedro\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/usuarios/migue@uma.es/contactos",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"usuarios",
+								"migue@uma.es",
+								"contactos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /usuarios/<email>/contactos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/usuarios/migue@uma.es/contactos/pedro@uma.es",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"usuarios",
+								"migue@uma.es",
+								"contactos",
+								"pedro@uma.es"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /eventos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/eventos",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"eventos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /eventos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"anfitrion\":\"migue@uma.es\",\n    \"descripcion\":\"se lia\", \n    \"inicio\":\"2024-11-14T20:00:00Z\",\n    \"duracion\":\"120\",\n    \"invitados\":[\n        {\"email\":\"pedro@uma.es\", \"estado\":\"pendiente\"}\n    ]\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/eventos",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"eventos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /eventos/<id>",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"duracion\":\"30\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/eventos/6735d0ec54f083b7eb9ca8c3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"eventos",
+								"6735d0ec54f083b7eb9ca8c3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /eventos/<id>",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/eventos/6735d0ec54f083b7eb9ca8c3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"eventos",
+								"6735d0ec54f083b7eb9ca8c3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Contactos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/usuarios/migue@uma.es/contactos/buscar?nombre=ped",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"usuarios",
+								"migue@uma.es",
+								"contactos",
+								"buscar"
+							],
+							"query": [
+								{
+									"key": "nombre",
+									"value": "ped"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Invitar a un evento a un contacto de un usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"pedro@uma.es\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/eventos/6735d318d5c978638cfd4704/invitar",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"eventos",
+								"6735d318d5c978638cfd4704",
+								"invitar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Aceptar una invitacion a un evento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"pedro@uma.es\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/eventos/6735d318d5c978638cfd4704/aceptar",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"eventos",
+								"6735d318d5c978638cfd4704",
+								"aceptar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reprogramar evento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"dias\":\"5\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/eventos/6735d318d5c978638cfd4704/reprogramar",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"eventos",
+								"6735d318d5c978638cfd4704",
+								"reprogramar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener agenda",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
